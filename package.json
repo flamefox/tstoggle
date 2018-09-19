@@ -1,0 +1,67 @@
+{
+  "name": "tstoggle",
+  "displayName": "tstoggle",
+  "description": "a toggle tool of typescript",
+  "version": "0.0.4",
+  "publisher": "flamefox",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.tstoggletojs",
+    "onCommand:extension.jstoggletots",
+    "onCommand:extension.keyswitch"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.tstoggletojs",
+        "title": "tstoggle: switch to js"
+      },
+      {
+        "command": "extension.jstoggletots",
+        "title": "tstoggle: switch to ts"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.keyswitch",
+        "key": "alt+o",
+        "when": "editorTextFocus"
+      }
+    ],
+    "debuggers": []
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.73",
+    "@types/typescript": "^2.0.0",
+    "tslint": "^4.0.2",
+    "typescript": "^2.3.3",
+    "vscode": "^0.11.0"
+  },
+  "bugs": {
+    "url": "https://github.com/flamefox/tstoggle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flamefox/tstoggle"
+  },
+  "keywords": [
+    "typescript",
+    "utils",
+    "toggle"
+  ],
+  "dependencies": {
+    "@types/strip-json-comments": "0.0.30",
+    "async": "^2.4.1",
+    "source-map": "^0.5.6",
+    "strip-json-comments": "^2.0.1"
+  }
+}

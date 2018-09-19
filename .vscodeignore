@@ -1,0 +1,12 @@
+.vscode/**
+typings/**
+tssrc/**
+test/**
+.gitignore
+jsconfig.json
+vsc-extension-quickstart.md
+tsconfig.json
+typings.json
+tslint.json
+*.zip
+*.vsix
